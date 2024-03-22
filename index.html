@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Dashboard Design</title>
+</head>
+<body>
+    
+    <div class="container">
+        <!--Section Sidebar-->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/fitgym.png">
+                    <h2>Fit<span class="danger">Gym</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                        </span>
+                </div>
+            </div>
+
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        dashboard
+                        </span>
+                        <h3>Tableau de bord</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        person
+                        </span>
+                        <h3>Utilisateurs</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                        </span>
+                        <h3>Historique</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        insights
+                        </span>
+                        <h3>Analyse</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                        </span>
+                        <h3>Tickets</h3>
+                        <span class="message-count">27</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        bolt
+                        </span>
+                        <h3>Performances</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        battery_charging_full
+                        </span>
+                        <h3>Progression</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                        </span>
+                        <h3>Paramètres</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        add
+                        </span>
+                        <h3>Nouveau</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                        </span>
+                        <h3>Déconnexion</h3>
+                </a>
+            </div>
+        </aside>
+        <!--Fin de la Section Sidebar-->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Analyse</h1>
+            <!-- Analyses -->
+            <div class="analyse">
+                <div class="depenses">
+                    <div class="statuts">
+                        <div class="info">
+                            <h3>Total Abonnement</h3>
+                            <h1>650,99€</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="pourcentage">
+                                <p>+80%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visites">
+                    <div class="statuts">
+                        <div class="info">
+                            <h3>Visites</h3>
+                            <h1>315</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="pourcentage">
+                                <p>-20%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="constance">
+                    <div class="statuts">
+                        <div class="info">
+                            <h3>Régularité</h3>
+                            <h1>205</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="pourcentage">
+                                <p>+35%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Fin Section Analyse-->
+
+                <!-- Section nouveaux utilisateurs-->
+                <div class="new-users">
+                    <h2>Nouveaux Utilisateurs</h2>
+                    <div class="user-list">
+                        <div class="user">
+                            <img src="images/profile-2.jpg">
+                            <h2>Marc</h2>
+                            <p>Connecté il y a une heure</p>
+                        </div>
+                        <div class="user">
+                            <img src="images/profile-3.jpg">
+                            <h2>Rayan</h2>
+                            <p>Connecté il y a 6 heures</p>
+                        </div>
+                        <div class="user">
+                            <img src="images/profile-4.jpg">
+                            <h2>Chloé</h2>
+                            <p>Connecté il y a 30 minutes</p>
+                        </div>
+                        <div class="user">
+                            <img src="images/plus.png">
+                            <h2>Plus</h2>
+                            <p>Nouveau Utilisateur</p>
+                        </div>
+                    </div>
+                </div>
+            <!-- Fin section nouveaux utilisateurs-->
+
+            <!-- Abonnement Récents-->
+            <div class="recent-orders">
+                <h2>Abonnement Récent</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom Abonnement</th>
+                            <th>Numéro Abonnement</th>
+                            <th>Règlement</th>
+                            <th>Statuts</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="#">Voir tous les Abonnements</a>
+            </div>
+            <!-- Fin Section Abonnement-->
+        </main>
+        <!-- Fin Du Contenu Main-->
+
+        <!-- Right Section-->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profil">
+                    <div class="info">
+                        <p>Bonjour, <b>Momo</b></p>
+                        <small class="text-muted">Administrateur</small>
+                    </div>
+                    <div class="profil-photo">
+                        <img src="images/profile-1.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Nav-->
+
+            <div class="user-profil">
+                <div class="logo">
+                    <img src="images/fitgym.png">
+                    <h2>FitGym</h2>
+                    <p>Les Entraînements</p>
+                </div>
+            </div>
+
+            <div class="reminder">
+                <div class="header">
+                    <h2>Rappels</h2>
+                    <span class="material-icons-sharp">
+                        notifications_none
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            volume_up
+                        </span>
+                    </div>
+
+                    <div class="content">
+                        <div class="info">
+                            <h3>Espace de Travail</h3>
+                            <small class="text-muted">
+                                06:00 - 08:00
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification desactive">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            edit
+                        </span>
+                    </div>
+
+                    <div class="content">
+                        <div class="info">
+                            <h3>Espace de Travail</h3>
+                            <small class="text-muted">
+                                06:00 - 08:00
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification ajout-rappel">
+                    <div>
+                        <span class="material-icons-sharp">
+                            add
+                        </span>
+                        <h3>Ajouter un rappel</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="order.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
